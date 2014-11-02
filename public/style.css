@@ -1,0 +1,75 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+body {
+    background: black;
+    color: white;
+    font-family: 'Codystar', monospace;
+}
+
+#metrosign {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    table-layout:fixed;
+    z-index: 0;
+}
+
+#metrosign thead {
+    color: red;
+}
+
+#metrosign tbody {
+    color: yellow;
+}
+
+#metrosign th {
+    text-align: left;
+}
+
+#metrosign th,
+#metrosign td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+}
+
+#metrosign .ln {
+    width: 18%;
+}
+
+#metrosign .car {
+    width: 16%;
+}
+
+#metrosign .dest {
+    width: 46%;
+}
+
+#metrosign .min {
+    width: 20%;
+    text-align: right;
+}
+
+#station-select {
+    display: block;
+    position: fixed;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    margin: auto;
+    width: 300px;
+    opacity: 0;
+    transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+#station-select.visible {
+    opacity: 1;
+}
